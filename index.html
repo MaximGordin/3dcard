@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="form">
+        <div class="container">
+        	<div id="card" class="card">
+	            <div class="card-front">
+                    <div id ="bank" class=""></div>
+		            <div class="logo">
+						<!-- <img src="images/logo.png" alt="GENESIS"> -->
+						Логотип
+		            </div>
+	                <div class="card-input card-number">
+	                	<label for="number">Номер карты*</label>
+	                	<input type="text" id="number"  placeholder="XXXX XXXX XXXX XXXX" class="isValidate"> 
+	                </div>
+	                <div class="card-input card-name">
+	                	<label for="name">Имя вадельца*</label>
+	                	<input type="text" id="name" placeholder="IVANOV IVAN" class="isValidate">
+	                </div>
+	                <div class="card-input card-date">
+                        <label for="date">Срок действия*</label>
+                        
+                        <br>
+                        
+                        <select name="month" id="month"></select>
+                        <select name="year" id="year"></select>
+	                </div>
+	            </div>
+	            <div class="card-back">
+	            	<div class="black-line">
+	            		<div class="card-ccv">
+	            			<input type="text"  id="ccv" placeholder="ccv" maxlength="3" class="isValidate">
+	            		</div>
+	            	</div>
+	            	<p>
+	            		Справочная информация. Номера телефонов. Правила обращения Далеко-далеко за словесными горами в стране, гласных и согласных живут.
+	            	</p>
+	            </div>
+        	</div>
+            <div class="btn" onclick="cardFlip()">Перевернуть</div>
+            <div class="btn" onclick='sendData();'>Отправить</div>
+        </div>
+    </div>
+    <script src="scripts.js"></script>
+</body>
+</html>
